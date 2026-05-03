@@ -1,0 +1,2 @@
+index,sample_name,label,scenario,profile,frequency_hz,traces,seed,gain_alpha,clip_percentile,image_path,input_path,merged_out_path,oil_type,fractal_dimension,fractal_bins,water_low,water_high
+0,00000_oil_sandbox_local_patch_f1000MHz_t2_s20261123,oil,sandbox_local_patch,sandbox_local_easy,1000000000.0,2,20261123,2.2396,99.662,images\oil\00000_oil_sandbox_local_patch_f1000MHz_t2_s20261123.png,inputs\00000_oil_sandbox_local_patch_f1000MHz_t2_s20261123.in,,crude,1.501,40,0.053,0.125

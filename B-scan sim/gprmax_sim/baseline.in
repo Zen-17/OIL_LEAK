@@ -1,0 +1,19 @@
+#title: Pure wet sand background
+
+#domain: 0.6 1.5 0.003
+#dx_dy_dz: 0.003 0.003 0.003
+#time_window: 30e-9
+
+#material: 18 0.02 1 0 soil_wet
+
+#box: 0 0 0 0.6 1.5 0.003 soil_wet
+
+#waveform: gaussian 1 1.61e9 mypulse
+
+#hertzian_dipole: z 0.05 0.003 0.0015 mypulse
+#rx: 0.15 0.003 0.0015
+
+#src_steps: 0.02 0 0
+#rx_steps: 0.02 0 0
+
+#output_dir: output_baseline

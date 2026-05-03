@@ -1,0 +1,33 @@
+{
+  "f_start_mhz": 900.0,
+  "f_stop_mhz": 900.0,
+  "f_step_mhz": 20.0,
+  "waveform": "contsine",
+  "traces": 96,
+  "tx_rx_spacing": 0.1,
+  "tx_x0": 0.06,
+  "trace_step": 0.003,
+  "files": [
+    {
+      "file": "sfcw_oil_0900MHz.in",
+      "frequency_mhz": 900.0,
+      "frequency_hz": 900000000.0,
+      "traces": 96,
+      "tx_x0": 0.06,
+      "rx_x0": 0.16,
+      "tx_rx_spacing": 0.1,
+      "trace_step": 0.003,
+      "dx": 0.003,
+      "dy": 0.003,
+      "dz": 0.003,
+      "x_size": 0.5,
+      "y_size": 0.1,
+      "z_size": 3.5,
+      "time_window": 8e-08,
+      "pml_cells": 10,
+      "z_surface": 0.03,
+      "antenna_height": 0.0,
+      "waveform": "contsine"
+    }
+  ]
+}

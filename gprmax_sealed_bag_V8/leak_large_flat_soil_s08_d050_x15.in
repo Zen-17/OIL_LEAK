@@ -1,0 +1,28 @@
+#title: LEAK large_flat er=8.0 depth=0.50m cx=0.15m
+
+#domain: 0.6 1.533 0.003
+#dx_dy_dz: 0.003 0.003 0.003
+#time_window: 3e-08
+
+#pml_cells: 10 10 0 10 0 0
+
+## Materials
+#material: 8.0 0.004 1 0 soil
+#material: 2.3 0.0001 1 0 pe_wall
+#material: 3.1 0.00005 1 0 cooking_oil
+
+## Domain fill
+#box: 0 0 0 0.6 1.5 0.003 soil
+#box: 0 1.5 0 0.6 1.533 0.003 free_space
+
+## Target: large_flat  depth=0.50m  cx=0.15m
+#box: 0.039 0.975 0 0.261 0.999 0.003 pe_wall
+#box: 0.042 0.978 0 0.258 0.996 0.003 cooking_oil
+
+#waveform: gaussian 1 1610000000.0 mypulse
+
+## Ground-coupled sweep: run with -n 21
+#hertzian_dipole: z 0.05 1.497 0.0015 mypulse
+#rx: 0.15 1.497 0.0015
+#src_steps: 0.02 0 0
+#rx_steps: 0.02 0 0

@@ -1,0 +1,4 @@
+index,sample_name,label,scenario,profile,frequency_hz,traces,seed,gain_alpha,clip_percentile,mute_top_ratio,image_path,input_path,merged_out_path,oil_type,fractal_dimension,fractal_bins,water_low,water_high
+37,00037_no_oil_sandbox_clean_f900MHz_t32_s20554126,no_oil,sandbox_clean,sandbox_local_easy,900000000.0,32,20554126,2.8396,99.2896,0.113,,inputs\00037_no_oil_sandbox_clean_f900MHz_t32_s20554126.in,,crude,1.349,30,0.038,0.09
+38,00038_oil_sandbox_local_irregular_f900MHz_t32_s20561279,oil,sandbox_local_irregular,sandbox_local_easy,900000000.0,32,20561279,2.252,99.1328,0.121,,inputs\00038_oil_sandbox_local_irregular_f900MHz_t32_s20561279.in,,crude,1.368,28,0.036,0.05
+39,00039_oil_sandbox_local_pool_f900MHz_t32_s20569428,oil,sandbox_local_pool,sandbox_local_easy,900000000.0,32,20569428,2.6354,98.7374,0.1371,,inputs\00039_oil_sandbox_local_pool_f900MHz_t32_s20569428.in,,gasoline,1.301,27,0.031,0.051

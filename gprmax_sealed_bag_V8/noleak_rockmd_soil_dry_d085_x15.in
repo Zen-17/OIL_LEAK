@@ -1,0 +1,26 @@
+#title: NOLEAK rock_md soil_dry depth=0.85m cx=0.15m
+
+#domain: 0.6 1.533 0.003
+#dx_dy_dz: 0.003 0.003 0.003
+#time_window: 3e-08
+
+#pml_cells: 10 10 0 10 0 0
+
+## Materials
+#material: 5.0 0.001 1 0 soil
+#material: 6.0 0.001 1 0 rock
+
+## Domain fill
+#box: 0 0 0 0.6 1.5 0.003 soil
+#box: 0 1.5 0 0.6 1.533 0.003 free_space
+
+## Clutter: rock_md  depth=0.85m  cx=0.15m
+#box: 0.111 0.6 0 0.189 0.651 0.003 rock
+
+#waveform: gaussian 1 1610000000.0 mypulse
+
+## Ground-coupled sweep: run with -n 21
+#hertzian_dipole: z 0.05 1.497 0.0015 mypulse
+#rx: 0.15 1.497 0.0015
+#src_steps: 0.02 0 0
+#rx_steps: 0.02 0 0

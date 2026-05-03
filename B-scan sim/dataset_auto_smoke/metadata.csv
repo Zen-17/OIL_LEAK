@@ -1,0 +1,2 @@
+index,sample_name,label,scenario,frequency_hz,traces,seed,gain_alpha,clip_percentile,image_path,input_path,merged_out_path,oil_type,fractal_dimension,fractal_bins,water_low,water_high
+0,00000_no_oil_wet_lens_f800MHz_t2_s20261123,no_oil,wet_lens,800000000.0,2,20261123,2.2396,99.662,images\no_oil\00000_no_oil_wet_lens_f800MHz_t2_s20261123.png,inputs\00000_no_oil_wet_lens_f800MHz_t2_s20261123.in,inputs\00000_no_oil_wet_lens_f800MHz_t2_s20261123_merged.out,crude,1.769,70,0.085,0.259

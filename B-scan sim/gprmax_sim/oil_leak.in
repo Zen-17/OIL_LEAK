@@ -1,0 +1,24 @@
+#title: Oil contamination in wet sand two layer model
+
+#domain: 0.6 1.5 0.003
+#dx_dy_dz: 0.003 0.003 0.003
+#time_window: 30e-9
+
+#material: 18 0.02 1 0 soil_wet
+#material: 2.5 0.0001 1 0 oil_core
+#material: 8 0.005 1 0 oil_transition
+
+#box: 0 0 0 0.6 1.5 0.003 soil_wet
+
+#box: 0.17 0.08 0 0.33 0.22 0.003 oil_transition
+#box: 0.19 0.10 0 0.31 0.20 0.003 oil_core
+
+#waveform: gaussian 1 1.61e9 mypulse
+
+#hertzian_dipole: z 0.05 0.003 0.0015 mypulse
+#rx: 0.15 0.003 0.0015
+
+#src_steps: 0.02 0 0
+#rx_steps: 0.02 0 0
+
+#output_dir: output_oil

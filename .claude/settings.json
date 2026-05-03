@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python generate_cases.py)",
+      "Bash(dir /s /b)",
+      "Bash(shuf)",
+      "Bash(identify \"D:/GPRMax/B-scan sim/dataset_sandbox_local_1k_comp_v4_no_clutter/images/oil/00002_oil_sandbox_local_irregular_f1000MHz_t64_s20276598.png\")",
+      "Bash(identify \"D:/GPRMax/B-scan sim/dataset_sandbox_local_1k_comp_v4_no_clutter/images/no_oil/00001_no_oil_sandbox_clean_f900MHz_t64_s20269042.png\")"
+    ]
+  }
+}

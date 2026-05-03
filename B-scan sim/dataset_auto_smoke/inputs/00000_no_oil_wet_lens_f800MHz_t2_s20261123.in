@@ -1,0 +1,55 @@
+#title: Realistic shallow leakage scene (no_oil, wet_lens)
+#domain: 1.200 0.800 0.002
+#dx_dy_dz: 0.002 0.002 0.002
+#time_window: 42e-9
+#pml_cells: 10 10 0 10 10 0
+
+#material: 4.355 0.00225 1.0 0.0 dry_topsoil
+#material: 12.312 0.00732 1.0 0.0 moist_sand
+#material: 19.876 0.01672 1.0 0.0 wet_sand
+#material: 25.221 0.05318 1.0 0.0 clay_lens
+#material: 5.627 0.00381 1.0 0.0 oil_saturated_sand
+#material: 2.702 0.00256 1.0 0.0 free_oil
+#material: 5.000 0.00050 1.0 0.0 pvc
+#material: 7.200 0.00300 1.0 0.0 gravel
+
+#soil_peplinski: 0.52 0.14 1.818 2.66 0.085 0.259 host_soil
+#fractal_box: 0.000 0.000 0.000 1.200 0.680 0.002 1.77 1.0 1.0 1 70 host_soil z
+#box: 0.000 0.680 0.000 1.200 0.800 0.002 free_space
+
+## Surface roughness
+#box: 0.000 0.673 0.000 0.086 0.680 0.002 dry_topsoil
+#box: 0.086 0.671 0.000 0.171 0.680 0.002 dry_topsoil
+#box: 0.171 0.663 0.000 0.257 0.680 0.002 dry_topsoil
+#box: 0.257 0.672 0.000 0.343 0.680 0.002 dry_topsoil
+#box: 0.343 0.671 0.000 0.429 0.680 0.002 dry_topsoil
+#box: 0.429 0.674 0.000 0.514 0.680 0.002 dry_topsoil
+#box: 0.514 0.664 0.000 0.600 0.680 0.002 dry_topsoil
+#box: 0.600 0.673 0.000 0.686 0.680 0.002 dry_topsoil
+#box: 0.686 0.668 0.000 0.771 0.680 0.002 dry_topsoil
+#box: 0.771 0.663 0.000 0.857 0.680 0.002 dry_topsoil
+#box: 0.857 0.670 0.000 0.943 0.680 0.002 dry_topsoil
+#box: 0.943 0.672 0.000 1.029 0.680 0.002 dry_topsoil
+#box: 1.029 0.667 0.000 1.114 0.680 0.002 dry_topsoil
+#box: 1.114 0.666 0.000 1.200 0.680 0.002 dry_topsoil
+
+## Main anomaly region
+#box: 0.250 0.430 0.000 0.980 0.525 0.002 wet_sand
+#box: 0.420 0.470 0.000 0.760 0.605 0.002 wet_sand
+#box: 0.560 0.440 0.000 0.860 0.515 0.002 clay_lens
+
+## Background clutter
+#box: 0.169 0.335 0.000 0.309 0.430 0.002 wet_sand
+#box: 1.005 0.315 0.000 1.135 0.405 0.002 wet_sand
+#box: 0.300 0.270 0.000 0.365 0.335 0.002 gravel
+#box: 0.900 0.245 0.000 0.975 0.320 0.002 gravel
+#cylinder: 0.715 0.305 0.000 0.770 0.305 0.002 0.026 pvc
+
+#waveform: ricker 1 8.00e+08 txpulse
+#hertzian_dipole: z 0.100 0.718 0.001 txpulse
+#rx: 0.125 0.718 0.001
+#src_steps: 0.004 0.000 0.000
+#rx_steps: 0.004 0.000 0.000
+
+## Suggested command:
+## python -m gprMax <this_file>.in -n 220

@@ -1,0 +1,45 @@
+#title: Realistic shallow leakage scene (oil, sandbox_local_irregular, sandbox_local_easy)
+#domain: 1.200 0.700 0.002
+#dx_dy_dz: 0.002 0.002 0.002
+#time_window: 2.491e-08
+#pml_cells: 10 10 0 10 4 0
+
+#material: 3.276 0.00132 1.0 0.0 dry_topsoil
+#material: 5.569 0.00493 1.0 0.0 moist_sand
+#material: 10.930 0.01187 1.0 0.0 wet_sand
+#material: 16.044 0.01533 1.0 0.0 clay_lens
+#material: 2.643 0.00052 1.0 0.0 oil_saturated_sand
+#material: 2.051 0.00062 1.0 0.0 free_oil
+#material: 5.000 0.00050 1.0 0.0 pvc
+#material: 7.200 0.00300 1.0 0.0 gravel
+
+#soil_peplinski: 0.52 0.14 1.620 2.66 0.070 0.110 host_soil
+#fractal_box: 0.000 0.000 0.000 1.200 0.680 0.002 1.27 1.0 1.0 1 36 host_soil z
+#box: 0.000 0.680 0.000 1.200 0.700 0.002 free_space
+
+## Surface roughness
+#box: 0.000 0.673 0.000 0.150 0.680 0.002 dry_topsoil
+#box: 0.150 0.671 0.000 0.300 0.680 0.002 dry_topsoil
+#box: 0.300 0.672 0.000 0.450 0.680 0.002 dry_topsoil
+#box: 0.450 0.674 0.000 0.600 0.680 0.002 dry_topsoil
+#box: 0.600 0.675 0.000 0.750 0.680 0.002 dry_topsoil
+#box: 0.750 0.674 0.000 0.900 0.680 0.002 dry_topsoil
+#box: 0.900 0.673 0.000 1.050 0.680 0.002 dry_topsoil
+#box: 1.050 0.674 0.000 1.200 0.680 0.002 dry_topsoil
+
+## Main anomaly region
+#box: 0.252 0.547 0.000 0.543 0.631 0.002 oil_saturated_sand
+#box: 0.209 0.572 0.000 0.403 0.656 0.002 oil_saturated_sand
+#box: 0.414 0.564 0.000 0.468 0.608 0.002 free_oil
+#box: 0.306 0.588 0.000 0.364 0.634 0.002 free_oil
+
+## Background clutter
+
+#waveform: ricker 1 9.00e+08 txpulse
+#hertzian_dipole: z 0.100 0.681 0.001 txpulse
+#rx: 0.125 0.681 0.001
+#src_steps: 0.004 0.000 0.000
+#rx_steps: 0.004 0.000 0.000
+
+## Suggested command:
+## python -m gprMax <this_file>.in -n 220

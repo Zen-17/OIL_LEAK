@@ -1,0 +1,48 @@
+{
+  "data_root": "D:\\GPRMax\\B-scan sim\\dataset_sandbox_local_1k_comp_v4_no_clutter\\images",
+  "output_dir": "D:\\GPRMax\\B-scan sim\\runs\\mobilenetv3_small_v4_no_clutter_20260408",
+  "epochs": 40,
+  "batch_size": 32,
+  "image_size": 224,
+  "hflip_prob": 0.5,
+  "rotate_deg": 10.0,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "seed": 42,
+  "workers": 0,
+  "patience": 8,
+  "amp": true,
+  "no_pretrained": false,
+  "device": "cuda",
+  "class_to_idx": {
+    "no_oil": 0,
+    "oil": 1
+  },
+  "idx_to_class": {
+    "0": "no_oil",
+    "1": "oil"
+  },
+  "num_train": 692,
+  "num_val": 147,
+  "num_test": 151,
+  "class_weights": [
+    0.9829545617103577,
+    1.0176470279693604
+  ],
+  "split_counts": {
+    "train": {
+      "no_oil": 352,
+      "oil": 340
+    },
+    "val": {
+      "oil": 72,
+      "no_oil": 75
+    },
+    "test": {
+      "no_oil": 77,
+      "oil": 74
+    }
+  }
+}

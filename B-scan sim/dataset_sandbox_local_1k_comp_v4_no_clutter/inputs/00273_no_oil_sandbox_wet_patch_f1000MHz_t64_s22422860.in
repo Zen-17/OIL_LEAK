@@ -1,0 +1,42 @@
+#title: Realistic shallow leakage scene (no_oil, sandbox_wet_patch, sandbox_local_easy)
+#domain: 1.200 0.700 0.002
+#dx_dy_dz: 0.002 0.002 0.002
+#time_window: 2.079e-08
+#pml_cells: 10 10 0 10 4 0
+
+#material: 3.578 0.00111 1.0 0.0 dry_topsoil
+#material: 5.332 0.00326 1.0 0.0 moist_sand
+#material: 11.472 0.01231 1.0 0.0 wet_sand
+#material: 15.839 0.01480 1.0 0.0 clay_lens
+#material: 2.341 0.00022 1.0 0.0 oil_saturated_sand
+#material: 1.877 0.00054 1.0 0.0 free_oil
+#material: 5.000 0.00050 1.0 0.0 pvc
+#material: 7.200 0.00300 1.0 0.0 gravel
+
+#soil_peplinski: 0.52 0.14 1.617 2.66 0.062 0.092 host_soil
+#fractal_box: 0.000 0.000 0.000 1.200 0.680 0.002 1.35 1.0 1.0 1 31 host_soil z
+#box: 0.000 0.680 0.000 1.200 0.700 0.002 free_space
+
+## Surface roughness
+#box: 0.000 0.672 0.000 0.150 0.680 0.002 dry_topsoil
+#box: 0.150 0.672 0.000 0.300 0.680 0.002 dry_topsoil
+#box: 0.300 0.672 0.000 0.450 0.680 0.002 dry_topsoil
+#box: 0.450 0.671 0.000 0.600 0.680 0.002 dry_topsoil
+#box: 0.600 0.674 0.000 0.750 0.680 0.002 dry_topsoil
+#box: 0.750 0.674 0.000 0.900 0.680 0.002 dry_topsoil
+#box: 0.900 0.671 0.000 1.050 0.680 0.002 dry_topsoil
+#box: 1.050 0.672 0.000 1.200 0.680 0.002 dry_topsoil
+
+## Main anomaly region
+#box: 0.117 0.587 0.000 0.292 0.614 0.002 wet_sand
+
+## Background clutter
+
+#waveform: ricker 1 1.00e+09 txpulse
+#hertzian_dipole: z 0.100 0.684 0.001 txpulse
+#rx: 0.125 0.684 0.001
+#src_steps: 0.004 0.000 0.000
+#rx_steps: 0.004 0.000 0.000
+
+## Suggested command:
+## python -m gprMax <this_file>.in -n 220
